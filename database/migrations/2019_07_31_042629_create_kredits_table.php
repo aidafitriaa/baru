@@ -16,9 +16,10 @@ class CreateKreditsTable extends Migration
         Schema::create('kredits', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('kode_kredit');
-            $table->string('KTP');
-            $table->bigIncrements('paket_kredits_id');
-            $table->bigIncrements('mobils_id');
+            $table->integer('KTP');
+            $table->bigInteger('paket_kredits_id');
+            $table->bigInteger('mobils_id');
+            $table->string('tgl_kredit');
             $table->timestamps();
         });
     }

@@ -15,12 +15,12 @@ class CreatePaketKreditsTable extends Migration
     {
         Schema::create('paket_kredits', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('kode_paket');
+            $table->integer('kode_paket');
             $table->string('harga_paket');
             $table->string('uang_muka');
             $table->integer('jumlah_cicilan');
-            $table->integer('bunga');
-            $table->integer('nilai_cicilan');
+            $table->string('bunga');
+            $table->string('nilai_cicilan');
             $table->timestamps();
         });
     }

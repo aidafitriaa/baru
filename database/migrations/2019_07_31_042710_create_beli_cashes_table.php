@@ -17,9 +17,9 @@ class CreateBeliCashesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('kode_cash');
             $table->integer('KTP');
-            $table->bigIncrements('moblis_id');
-            $table->integer('cash_tgl');
-            $table->integer('cash_bayar');
+            $table->bigInteger('moblis_id');
+            $table->string('cash_tgl');
+            $table->string('cash_bayar');
             $table->timestamps();
         });
     }

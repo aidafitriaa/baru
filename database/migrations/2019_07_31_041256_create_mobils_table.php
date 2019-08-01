@@ -19,7 +19,7 @@ class CreateMobilsTable extends Migration
             $table->string('merk');
             $table->string('type');
             $table->string('warna');
-            $table->integer('harga_mobil');
+            $table->string('harga_mobil');
             $table->string('gambar');
             $table->timestamps();
         });
